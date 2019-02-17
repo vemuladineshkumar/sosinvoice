@@ -15,7 +15,7 @@ class Signin extends CI_Controller {
 
     public function login()
 	{
-print_r($_POST['email']);
+
 
 		$this->load->library('form_validation');
         $this->load->helper('url','form_validation');
