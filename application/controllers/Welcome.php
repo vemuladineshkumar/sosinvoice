@@ -24,4 +24,14 @@ class Welcome extends CI_Controller {
 		
 		$this->load->view('login');
 	}
+
+	public function home()
+	{
+		$this->load->helper('url');
+		
+		$this->load->view('dashboard');
+	}
+	
+
+
 }

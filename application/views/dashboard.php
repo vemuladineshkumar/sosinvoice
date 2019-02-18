@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url('assets/assets/img/apple-icon.png');?>">
-  <link rel="icon" type="image/png" href="<?php echo base_url('assets/assets/img/favicon.png');?>">
+  <link rel="icon" type="image/png" href="<?php echo base_url('assets/images/favicon.ico');?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Material Dashboard by Creative Tim
@@ -28,8 +28,8 @@
         Tip 2: you can also add an image using data-image tag
     -->
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+        <a href="https://www.shiftonesystems.com/" class="simple-text logo-normal">
+          Shift One systems
         </a>
       </div>
       <div class="sidebar-wrapper">
@@ -150,7 +150,7 @@
                   <a class="dropdown-item" href="#">Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Log out</a>
+                  <a class="dropdown-item" href="<?php echo base_url('Signin/logout');?>">Log out</a>
                 </div>
               </li>
             </ul>
@@ -577,24 +577,20 @@
         <div class="container-fluid">
           <nav class="float-left">
             <ul>
+              
               <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
-                </a>
-              </li>
-              <li>
-                <a href="https://creative-tim.com/presentation">
+                <a href="https://www.shiftonesystems.com/the-company/">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="http://blog.creative-tim.com">
+                <a href="https://www.shiftonesystems.com/blog/">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="https://www.creative-tim.com/license">
-                  Licenses
+                <a href="https://www.shiftonesystems.com/our-works/">
+                  Our Works
                 </a>
               </li>
             </ul>
@@ -604,7 +600,7 @@
             <script>
               document.write(new Date().getFullYear())
             </script>, made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+            <a href="https://www.shiftonesystems.com/" target="_blank">Shift One Systems</a> for a better web.
           </div>
         </div>
       </footer>

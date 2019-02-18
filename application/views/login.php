@@ -32,13 +32,14 @@
 					<div class="login100-form-avatar">
 						<img src="<?php echo base_url('assets/images/Shift-One-logo.png');?>" alt="AVATAR">
 					</div>
-
-				<!--	<span class="login100-form-title p-t-20 p-b-45">
-					Award Winning Website Development Company
-					</span>-->
-
+				<?php if(!empty($message)){ ?>
+					<span class="login100-form-title p-t-20 p-b-45">
+					<div id="infoMessage"><?php echo $message;?></div>
+					</span>
+				<?php } ?>
 					<div class="wrap-input100 validate-input m-b-10" data-validate = "Username is required">
-						<input class="input100" type="email" name="email" placeholder="Email">
+						<input class="input100" type="email" name="email" placeholder="Email" value="<?php echo set_value('email');?>">
+						<p><?php echo form_error('email');?></p>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user"></i>
@@ -46,7 +47,8 @@
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-10" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="pass" placeholder="Password" value="<?php echo set_value('pass');?>">
+						<p><?php echo form_error('pass');?></p>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock"></i>
