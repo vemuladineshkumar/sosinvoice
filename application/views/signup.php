@@ -28,7 +28,7 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('<?php echo base_url('assets/images/video-bg.jpg');?>');">
 			<div class="wrap-login100 p-t-190 p-b-30">
-				<form class="login100-form validate-form" action="<?php echo base_url('Signin/login');?>" method="post">
+				<form class="login100-form validate-form" action="<?php echo base_url('Signin/signup');?>" method="post">
 					<div class="login100-form-avatar">
 						<img src="<?php echo base_url('assets/images/Shift-One-logo.png');?>" alt="AVATAR">
 					</div>
@@ -36,8 +36,17 @@
 					<span class="login100-form-title p-t-20 p-b-45">
 					<div id="infoMessage"><?php echo $message;?></div>
 					</span>
-				<?php } ?>
-					<div class="wrap-input100 validate-input m-b-10" data-validate = "Username is required">
+                <?php } ?>
+                
+                <div class="wrap-input100 validate-input m-b-10" data-validate = "Username is required">
+						<input class="input100" type="text" name="name" placeholder="User Name" value="<?php echo set_value('name');?>">
+						<p><?php echo form_error('name');?></p>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user"></i>
+						</span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-10" data-validate = "Email is required">
 						<input class="input100" type="email" name="email" placeholder="Email" value="<?php echo set_value('email');?>">
 						<p><?php echo form_error('email');?></p>
 						<span class="focus-input100"></span>
@@ -53,23 +62,25 @@
 						<span class="symbol-input100">
 							<i class="fa fa-lock"></i>
 						</span>
-					</div>
-
+                    </div>
+                    
+                    <div class="wrap-input100 validate-input m-b-10" data-validate = "Confirm Password is required">
+						<input class="input100" type="password" name="re-pass" placeholder="Password" value="<?php echo set_value('re-pass');?>">
+						<p><?php echo form_error('re-pass');?></p>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock"></i>
+						</span>
+                    </div>
 					<div class="container-login100-form-btn p-t-10">
 						<button class="login100-form-btn">
-							signin
+							Signup
 						</button>
 					</div>
 
-					<div class="text-center w-full p-t-25 p-b-230">
-						<a href="#" class="txt1">
-							Forgot Username / Password?
-						</a>
-					</div>
-
-					<div class="text-center w-full">
-						<a class="txt1" href="<?php echo base_url('Signin/signup');?>">
-							Create new account
+					<div class="text-center w-full" style="padding-top: 60px !important;">
+						<a class="txt1" href="<?php echo base_url('Signin/login');?>">
+						Already have your account? Signin
 							<i class="fa fa-long-arrow-right"></i>						
 						</a>
 					</div>
